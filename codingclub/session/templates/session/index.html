@@ -1,0 +1,14 @@
+{% extends "session/base.html" %}
+{% block title %}sessions{% endblock %}
+    
+{% block content %}
+    {% for session in sessions %}
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ session.title }}</h5>
+              <p class="card-text">{{ session.date }}</p>
+              <a href="{% url 'sessionsbyid' session.id %}" class="btn btn-primary">View</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

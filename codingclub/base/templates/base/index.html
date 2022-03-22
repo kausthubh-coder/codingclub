@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+
+{% block title %} Coding Club {% endblock %}
+
+
+{% block body %}
+
+  <!-- music cards -->
+  <section class="bg-coolGray-900 text-white">
+    <div>
+      <div class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
+        <h1 class="text-4xl font-bold leading-none sm:text-5xl text-purple-400">Coding Club</h1>
+        <br>
+        <span class="text-gray-300 text-2xl ">An Ardrey Kell Club</span>
+        <p class="px-8 mt-8 mb-12 text-lg">a coding club in ak to learn the basics of programming to building rest apis game design, apps ect.</p>
+        <div class="flex flex-wrap justify-center">
+          <a href="{% url 'sessions' %}">
+            <button class="px-8 py-3 m-2 text-lg font-semibold rounded bg-purple-400 text-coolGray-900">Go to previous Sessions</button>
+          </a>
+      </div>
+    </div>
+  </div>
+  </section>
+</body>
+</html>
+
+
+{% endblock %}

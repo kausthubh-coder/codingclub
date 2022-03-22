@@ -1,0 +1,8 @@
+{% extends "session/base.html" %}
+{% block title %}session{% endblock %}
+    
+{% block content %}
+    {% for session in sessions %}
+            {{ session.content.html|safe }}
+    {% endfor %}
+{% endblock %}
